@@ -1,0 +1,35 @@
+name: toc
+
+on:
+  push:
+    paths:
+      - API.md
+
+jobs:
+  toc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install gh-md-toc
+        run: |
+          wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
+          chmod +x gh-md-toc
+      - name: Insert TOC
+        run: |
+          ./gh-md-toc --insert API.md
+          git diff
+      - name: Git commit documents
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add API.md
+          git commit -m ":memo: [CI] update TOC"
+
+      - name: Git push
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
+        if: github.ref == 'refs/heads/master'
+
