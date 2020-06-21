@@ -1,23 +1,11 @@
 # Nico API
 
- * [System](#system)
- * [Input](#input)
-   * [Buttons](#buttons)
-   * [Joysticks](#joysticks)
-   * [Mouse](#mouse)
- * [Graphics](#graphics)
-   * [Colors](#colors)
-   * [Drawing](#drawing)
-   * [Sprites](#sprites)
-   * [Text](#text)
-   * [Tilemap](#tilemap)
-   * [Palettes](#palettes)
-   * [Dithering](#dithering)
-   * [Camera](#camera)
-   * [Misc Graphics](#misc-graphics)
- * [Audio](#audio)
- * [Math](#math)
-   
+Table of contents:
+
+<!--ts-->
+
+<!--te-->
+
 ## Overview
 
 Many functions in Nico take `Pfloat` or `Pint` arguments, these are automatically converted types so you don't have to think too much about types when you don't care.
