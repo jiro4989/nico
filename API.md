@@ -3,6 +3,37 @@
 Table of contents:
 
 <!--ts-->
+   * [Nico API](#nico-api)
+      * [Overview](#overview)
+      * [System](#system)
+      * [Input](#input)
+         * [Buttons](#buttons)
+         * [Joysticks](#joysticks)
+         * [Mouse](#mouse)
+         * [Keyboard](#keyboard)
+      * [Graphics](#graphics)
+         * [Colors](#colors)
+         * [Drawing](#drawing)
+            * [Pixels](#pixels)
+            * [Circles and Ellipses](#circles-and-ellipses)
+            * [Lines](#lines)
+            * [Rectangles](#rectangles)
+            * [Triangles](#triangles)
+            * [Quads](#quads)
+         * [Sprites](#sprites)
+         * [Text](#text)
+         * [Tilemap](#tilemap)
+         * [Palettes](#palettes)
+         * [Dithering](#dithering)
+         * [Camera](#camera)
+         * [Misc Graphics](#misc-graphics)
+      * [Audio](#audio)
+         * [SFX](#sfx)
+         * [Synth](#synth)
+         * [Music](#music)
+      * [Math](#math)
+
+<!-- Added by: vagrant, at: Sun Jun 21 10:47:34 UTC 2020 -->
 
 <!--te-->
 
